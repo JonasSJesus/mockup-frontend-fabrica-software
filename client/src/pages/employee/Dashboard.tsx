@@ -119,15 +119,15 @@ export default function EmployeeDashboard() {
   };
 
   const handleStartSurvey = (surveyId: string) => {
-    setLocation(`/employee/survey/${surveyId}`);
+    setLocation(`/funcionario/questionario/${surveyId}`);
   };
 
   const handleWatchVideo = () => {
-    setLocation(`/employee/videos`);
+    setLocation(`/funcionario/videos`);
   };
 
   const handleViewGamification = () => {
-    setLocation('/employee/gamification');
+    setLocation('/funcionario/gamificacao');
   };
 
   const progressPercentage = (stats.currentPoints / stats.pointsToNextLevel) * 100;
@@ -288,7 +288,7 @@ export default function EmployeeDashboard() {
               <Video className="h-6 w-6" />
               Vídeos Educativos
             </h2>
-            <Button variant="outline" onClick={() => setLocation('/employee/videos')}>
+            <Button variant="outline" onClick={() => setLocation('/funcionario/videos')}>
               Ver Todos
             </Button>
           </div>

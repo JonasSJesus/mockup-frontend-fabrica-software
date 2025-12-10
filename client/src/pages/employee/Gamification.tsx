@@ -256,7 +256,7 @@ export default function Gamification() {
       {/* Header */}
       <header className="border-b border-border bg-card sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
-          <Button variant="ghost" onClick={() => setLocation('/employee/dashboard')}>
+          <Button variant="ghost" onClick={() => setLocation('/funcionario/dashboard')}>
             <ArrowLeft className="mr-2 h-4 w-4" />
             Voltar ao Dashboard
           </Button>

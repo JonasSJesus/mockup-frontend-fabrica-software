@@ -217,7 +217,7 @@ export default function SurveyForm({ surveyId }: SurveyFormProps) {
       
       // Redirecionar para dashboard após 2 segundos
       setTimeout(() => {
-        setLocation('/employee/dashboard');
+        setLocation('/funcionario/dashboard');
       }, 2000);
     } catch (error) {
       toast.error('Erro ao enviar questionário. Tente novamente.');
@@ -280,7 +280,7 @@ export default function SurveyForm({ surveyId }: SurveyFormProps) {
       <header className="border-b border-border bg-card sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Button variant="ghost" onClick={() => setLocation('/employee/dashboard')}>
+            <Button variant="ghost" onClick={() => setLocation('/funcionario/dashboard')}>
               <ArrowLeft className="mr-2 h-4 w-4" />
               Voltar ao Dashboard
             </Button>
